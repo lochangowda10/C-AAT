@@ -1,37 +1,44 @@
-# Smart Parking Management System
+<div align="center">
 
-This is a professional-grade C console application developed to automate parking allocation for a shopping mall. It tracks slot availability, allocates spaces, generates occupancy statistics, and calculates parking fees based on time.
+# 🚗 Smart Parking Management System
 
-## Features
-- **Dynamic Capacity**: You choose how big the parking lot is when you start the program.
-- **Ticketing & Billing**: Calculates a fee based on the time a vehicle spends in the lot.
-- **Data Persistence**: Saves the state of the parking lot to `parking_data.dat` so you don't lose data when you close the app.
-- **Robust Input Handling**: Protects against crashes when the user types text instead of numbers.
+[![C Language](https://img.shields.io/badge/Language-C-blue.svg)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
 
-## Syllabus Concepts Demonstrated
-This project serves as a comprehensive demonstration of core C concepts:
-- **Module 1 & 2**: Control flow, iteration (`while`, `for`), selection (`switch`, `if`), and formatted I/O.
-- **Module 3**: Arrays and String manipulation (`strcpy`).
-- **Module 4**: Modular functions, standard libraries (`<time.h>`), and **Dynamic Memory Allocation** (`malloc`, `free`).
-- **Module 5**: Advanced data structures (`struct`), nested structures, `typedef`, `enum`, and passing structure pointers.
+*A lightweight, robust console application to automate parking lot management, allocations, and billing.*
 
-## How to Compile and Run
+</div>
 
-You will need a C compiler (like GCC) installed on your system. 
+## 📌 Overview
+The Smart Parking Management System replaces manual parking tracking with a fast, automated C program. It handles dynamic lot capacities, persistent data storage, and automated fee calculation based on parking duration.
 
-1. Open your terminal or command prompt.
-2. Navigate to the directory containing these files.
-3. Compile the code using this command:
-   ```bash
-   gcc main.c parking.c -o parking
-   ```
-4. Run the executable:
-   - On Windows: `parking.exe`
-   - On Mac/Linux: `./parking`
+## ✨ Features
+*   **Dynamic Scaling**: Allocate parking lots of any size at runtime using dynamic memory (`malloc`).
+*   **Smart Ticketing**: Automatically calculates parking fees based on time spent.
+*   **Data Persistence**: System state is saved to a binary file (`parking_data.dat`), preventing data loss.
+*   **Modular Architecture**: Clean, scalable code split across headers and implementation files.
 
-## Usage
-Upon starting, enter the desired capacity of the parking lot. The system will then present a menu:
-1. **Park a Vehicle**: Enter a license plate to park. The system assigns the first available slot.
-2. **Remove a Vehicle**: Enter a slot number to remove a vehicle. The system will display the time parked and the fee.
-3. **View Statistics**: See a visual representation of all free and occupied slots.
-4. **Exit**: Saves the current state and safely shuts down.
+## 🚀 Quick Start
+
+### Prerequisites
+*   A C compiler (e.g., `gcc`, `clang`, or MSVC)
+
+### Compilation
+Open your terminal and run:
+```bash
+gcc main.c parking.c -o parking
+```
+
+### Execution
+*   **Windows**: `.\parking.exe`
+*   **Mac/Linux**: `./parking`
+
+## 📖 Usage Guide
+1.  **Initialize**: On first launch, specify the maximum capacity of your parking lot.
+2.  **Park**: Select option 1, enter a license plate, and the system automatically assigns the nearest open slot.
+3.  **Leave**: Select option 2, enter the slot number. The system calculates the time parked and generates a bill.
+4.  **Monitor**: Select option 3 to view a visual layout of occupied vs. free slots.
+
+---
+*Developed as part of the C Programming AAT Project.*
