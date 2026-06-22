@@ -342,11 +342,12 @@ int main() {
         return 1; 
     }
 
+    initialize_lot(lot, capacity);
+
     if (load_data(lot, capacity)) {
         printf("=> Previous parking data loaded successfully!\n");
     } else {
         printf("=> Starting with a fresh, empty parking lot.\n");
-        initialize_lot(lot, capacity);
     }
 
     while (1) {

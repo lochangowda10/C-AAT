@@ -37,12 +37,15 @@ int main() {
         return 1; // Return non-zero to indicate an error to the Operating System
     }
 
-    // Try to load existing data from file. If it fails (first run), initialize a new lot.
+    // Always initialize the lot first to set up correct slot numbers and FREE statuses
+    // This prevents garbage values if the loaded file has a smaller capacity than requested.
+    initialize_lot(lot, capacity);
+
+    // Try to load existing data from file to overwrite the initial state.
     if (load_data(lot, capacity)) {
         printf("=> Previous parking data loaded successfully!\n");
     } else {
         printf("=> Starting with a fresh, empty parking lot.\n");
-        initialize_lot(lot, capacity);
     }
 
     // --- SYLLABUS: MODULE 2 (Iteration Statements - 'while' loop) ---
