@@ -1,227 +1,204 @@
-# PROJECT REPORT
+<div align="center">
 
-**Course:** C Programming (AAT)
-**Project Title:** Smart Parking Management System
-**Student Name:** Lochan Gowda
+**B.M.S COLLEGE OF ENGINEERING BENGALURU**
+<br>Autonomous Institute, Affiliated to VTU
 
----
+<br><br><br>
 
-## 1. ABSTRACT
-As urban infrastructure expands, the management of parking facilities becomes a critical bottleneck. Traditional manual tracking of parking slots is error-prone, inefficient, and lacks proper data persistence. This project presents the "Smart Parking Management System," a robust, console-based application developed entirely in the C programming language. The system aims to automate the allocation of parking spaces, track real-time occupancy, calculate time-based parking fees, and ensure data persistence across system reboots. By heavily utilizing core C concepts such as dynamic memory allocation, pointers, structures, and file I/O operations, this project serves as both a practical utility and a comprehensive demonstration of structured programming principles.
+**SPC AAT Report on**
 
----
+**TITLE**
 
-## 2. INTRODUCTION
-### 2.1 Background
-Shopping malls and commercial complexes experience high volumes of vehicular traffic. Managing this traffic requires a system that can quickly allocate available parking spots to incoming vehicles and accurately calculate fees upon exit. 
+**SMART PARKING MANAGEMENT SYSTEM**
 
-### 2.2 Problem Statement
-"A shopping mall wants to automate parking allocation. Develop a C application that tracks parking slot availability, allocates spaces, and generates occupancy statistics."
+<br><br>
+Submitted in partial fulfillment of the requirements for AAT
+<br><br>
 
-### 2.3 Proposed Solution
-The proposed solution is a modular C application that uses an array of structures to represent the parking lot. To ensure scalability, the size of this lot is not hardcoded; instead, the user dictates the capacity at runtime, and the system dynamically allocates the necessary memory. 
+**Bachelor of Engineering in**
+<br>**ARTIFICIAL INTELLIGENCE AND DATA SCIENCE**
 
----
+<br><br>
 
-## 3. OBJECTIVES
-1.  **Automate Space Allocation:** Automatically find and assign the lowest available parking slot to an incoming vehicle.
-2.  **Time-Based Ticketing:** Record the exact entry time of a vehicle using the `<time.h>` library and calculate fees dynamically upon exit.
-3.  **State Persistence:** Utilize Binary File I/O to save the state of the parking lot, ensuring recovery after a crash or shutdown.
-4.  **Robust Input Handling:** Prevent application crashes caused by invalid user inputs (e.g., entering characters instead of integers).
-5.  **Syllabus Integration:** Actively demonstrate all 5 modules of the C programming syllabus.
+**Submitted by:**
+<br>NAME OF THE CANDIDATE
+<br>1) ANEL VIGNEASH REDDI P (1BM25AD002)
+<br>2) SHREYAS K (1BM25AD54)
 
----
+<br><br>
 
-## 4. SYSTEM ARCHITECTURE
-The system follows a modular architecture, splitting responsibilities across different files to adhere to the principle of separate compilation.
+**Department of Artificial Intelligence and Data Science**
+<br>B.M.S College of Engineering
+<br>Bull Temple Road, Basavanagudi, Bangalore 560 019
+<br>2025-2026
 
-*   **`parking.h`**: The header file. Contains all data structure definitions (`struct`, `enum`) and function prototypes.
-*   **`parking.c`**: The implementation file. Contains the business logic (finding a slot, calculating fees, file writing/reading).
-*   **`main.c`**: The presentation layer. Contains the `main()` function, dynamic memory allocation, and the interactive menu loop.
+</div>
 
----
+<div style="page-break-after: always;"></div>
 
-## 5. THEORETICAL BACKGROUND (SYLLABUS MAPPING)
-This project meticulously implements concepts from the C programming syllabus.
+<div align="center">
 
-### 5.1 Module 1: Overview of C and Console I/O
-The project uses `printf` and `scanf` for all user interactions. A custom function `clear_input_buffer()` is implemented to safely flush the standard input stream, protecting the `scanf` calls from buffer overflow and infinite loops caused by bad data.
+**B.M.S COLLEGE OF ENGINEERING**
+<br>**DEPARTMENT OF ARTIFICIAL INTELLIGENCE AND DATA SCIENCE**
 
-### 5.2 Module 2: Statements
-*   **Iteration Statements:** A continuous `while(1)` loop drives the main menu, keeping the program alive until the user explicitly chooses to exit. `for` loops are used extensively in `parking.c` to iterate over the parking slots.
-*   **Selection Statements:** A `switch` statement handles the user's menu choice, providing a clean execution path for Park, Remove, Stats, and Exit operations. `if-else` blocks handle internal logic checks.
+<br><br><br>
 
-### 5.3 Module 3: Arrays, Strings, and Pointers
-*   **Strings:** Vehicle license plates are stored as character arrays (`char license_plate[20]`). The `<string.h>` library's `strcpy` function is used to safely copy string data.
-*   **Pointers:** Pointers are the backbone of this project. Instead of passing massive arrays by value (which duplicates memory), the dynamically allocated array is passed by reference (using a pointer) to all functions in `parking.c`.
+**DECLARATION**
 
-### 5.4 Module 4: Functions and Dynamic Allocation
-*   **Dynamic Allocation:** The `<stdlib.h>` library is used. `malloc(capacity * sizeof(ParkingSlot))` dynamically provisions memory from the heap based on user input. `free()` is strictly called before exit to prevent memory leaks.
-*   **Modular Functions:** Code is broken into cohesive, single-purpose functions like `initialize_lot`, `park_vehicle`, and `remove_vehicle`.
+</div>
 
-### 5.5 Module 5: Structures, Enums, and Typedefs
-*   **Structures:** Complex data types are modeled using `struct`. The system features nested structures, where a `Vehicle` struct is contained within a `ParkingSlot` struct.
-*   **Enumerations:** `enum SlotStatus { FREE, OCCUPIED }` is used to increase code readability and enforce strict states.
-*   **Typedef:** The `typedef` keyword aliases the structures, preventing the need to write `struct Vehicle` repeatedly.
+We, Anel Vigneash Reddi P and Shreyas K students of II nd Semester, B.E, Department of AIDS, BMS College of Engineering, Bangalore, hereby declare that, this AAT Project entitled "SMART PARKING MANAGEMENT SYSTEM" has been carried out in Department of AIDS, BMS College of Engineering, Bangalore during the academic semester FEB 2025 – JUNE 2026. We also declare that to the best of our knowledge and belief, the AAT Project report is not from part of any other report by any other students.
 
----
+<br><br>
+**Student Name** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Student Signature** 
+<br>1. Anel Vigneash Reddi P
+<br>2. Shreyas K
 
-## 6. DATA STRUCTURES
-The core of the system relies on the following custom data types defined in `parking.h`:
+<div style="page-break-after: always;"></div>
 
+<div align="center">
+
+**BMS COLLEGE OF ENGINEERING**
+<br>**DEPARTMENT OF ARTIFICIAL INTELLIGENCE AND DATA SCIENCE**
+
+<br><br><br>
+
+**CERTIFICATE**
+
+</div>
+
+This is to certify that the AAT Project titled “SMART PARKING MANAGEMENT SYSTEM” has been carried out by Anel Vigneash Reddi P (1BM25AD002), Shreyas K (1BM25AD54) during the academic year 2025-2026.
+
+<br><br><br><br><br>
+**Signature of the Faculty in Charge**
+
+<div style="page-break-after: always;"></div>
+
+<div align="center">
+
+**Table of Contents**
+
+</div>
+
+| Sl. No. | Title |
+| :--- | :--- |
+| 1 | Introduction |
+| 2 | Algorithm |
+| 3 | Flowchart |
+| 4 | Source code |
+| 5 | Results (screenshots) |
+| 6 | References |
+
+<div style="page-break-after: always;"></div>
+
+<div align="center">
+
+**1. INTRODUCTION**
+
+</div>
+
+As urban infrastructure expands and shopping malls experience high volumes of vehicular traffic, the management of parking facilities becomes a critical bottleneck. Traditional manual tracking of parking slots is error-prone, inefficient, and lacks proper data persistence. To better understand parking flow and reduce the chaos associated with finding parking spaces, automated management systems collect and manage parking data on a regular basis. 
+
+The Smart Parking Management System is designed to manage and allocate parking space data efficiently. This system allows users to automatically find and allocate the nearest available parking slots and perform various operations on the collected data. The program automatically calculates important metrics such as time spent in the parking lot and dynamically computes the required parking fee, providing a clear overview of parking activity within a given dataset.
+
+In addition to parking allocation, the system manages the state of the parking lot through file persistence. Data is saved directly to the hard drive, enabling the system to quickly recover and assess the status of each slot even after a power failure or system reboot. The program also counts the total number of occupied versus free slots and generates a summary report, making it easier to identify peak parking hours and manage capacity.
+
+This project is implemented using the C programming language and demonstrates the practical application of fundamental programming concepts such as dynamic memory allocation (malloc/free), arrays, loops, conditional statements, structures (struct), enumerations (enum), pointers, and binary file I/O operations. The use of dynamically allocated arrays of structures enables highly scalable storage of parking data, while pointers and loops facilitate data analysis and automated allocation. The program provides a user-friendly, menu-driven console approach to handling complex data structures.
+
+The Smart Parking Management System serves as an effective tool for educational purposes and advanced C programming implementation. It highlights the importance of pointers and memory management in developing scalable software and showcases how programming can be used to solve real-world infrastructure problems.
+
+<div style="page-break-after: always;"></div>
+
+<div align="center">
+
+**2. ALGORITHM**
+
+</div>
+
+**Step 1:** Start the program and prompt the user to input the total maximum capacity of the parking lot.
+**Step 2:** Dynamically allocate memory for an array of `ParkingSlot` structures based on the user's inputted capacity using the `malloc` function.
+**Step 3:** Attempt to open `parking_data.dat` in binary read mode (`rb`) to load any previously saved parking state. If the file does not exist, initialize the lot by looping through the array and setting all slot statuses to `FREE`.
+**Step 4:** Display the Main Menu with options: Park a Vehicle, Remove a Vehicle, View Statistics, and Exit.
+**Step 5:** If the user selects "Park a Vehicle":
+*   Input the license plate string.
+*   Iterate through the array. Find the first slot where `status == FREE`.
+*   Mark the slot as `OCCUPIED`, copy the license plate into the structure, and record the exact system entry time using `time(NULL)`.
+*   Save the updated array to the binary file.
+**Step 6:** If the user selects "Remove a Vehicle":
+*   Input the slot number and validate that it is within the bounds of the capacity.
+*   Check if the slot is `OCCUPIED`. If yes, record the exact exit time.
+*   Calculate the total time parked using `difftime(exit_time, entry_time)`.
+*   Calculate the total parking fee using a base rate and time multiplier.
+*   Mark the slot as `FREE` and save the updated array to the binary file.
+**Step 7:** If the user selects "View Statistics":
+*   Iterate through the array and print the license plates of all `OCCUPIED` slots, and indicate all `FREE` slots.
+*   Calculate and display the total number of occupied slots versus free slots.
+**Step 8:** If the user selects "Exit":
+*   Release the dynamically allocated memory back to the operating system using the `free()` function.
+*   End the program.
+
+<div style="page-break-after: always;"></div>
+
+<div align="center">
+
+**3. FLOWCHART**
+
+</div>
+
+*(Note: Paste the image of your flowchart here before printing the document)*
+
+```mermaid
+graph TD
+    A([Start]) --> B[/Input Parking Capacity/]
+    B --> C[Dynamically Allocate Memory array of Structs]
+    C --> D{Does Save File Exist?}
+    D -- Yes --> E[Load Data from File]
+    D -- No --> F[Initialize all Slots to FREE]
+    E --> G[Display Main Menu]
+    F --> G
+    
+    G --> H{Menu Choice}
+    H -- 1. Park --> I[/Input License Plate/]
+    I --> J[Find First FREE Slot]
+    J --> K[Mark OCCUPIED, Save Entry Time]
+    K --> L[Save Data to File]
+    L --> G
+    
+    H -- 2. Remove --> M[/Input Slot Number/]
+    M --> N{Is Slot OCCUPIED?}
+    N -- Yes --> O[Calculate Time Parked & Fee]
+    O --> P[Mark Slot as FREE]
+    P --> Q[Save Data to File]
+    Q --> G
+    N -- No --> R[Print 'Slot already empty']
+    R --> G
+    
+    H -- 3. Stats --> S[Loop through Array, Print Statuses]
+    S --> G
+    
+    H -- 4. Exit --> T[Free Allocated Memory]
+    T --> U([End Program])
+```
+
+<div style="page-break-after: always;"></div>
+
+<div align="center">
+
+**4. SOURCE CODE**
+
+</div>
+
+### File 1: `parking.h`
 ```c
-// Defines the state of a slot
-typedef enum {
-    FREE,
-    OCCUPIED
-} SlotStatus;
-
-// Defines a Vehicle
-typedef struct {
-    char license_plate[20];
-    time_t entry_time;
-} Vehicle;
-
-// Defines a single Parking Slot
-typedef struct {
-    int slot_number;
-    SlotStatus status;
-    Vehicle parked_vehicle;
-} ParkingSlot;
-```
-The entire parking lot is an array of `ParkingSlot` elements, manipulated via a pointer (`ParkingSlot *lot`).
-
----
-
-## 7. ALGORITHMS
-
-### 7.1 Initialization & Loading Algorithm
-1.  START
-2.  Prompt user for `capacity`.
-3.  Allocate memory: `lot = malloc(capacity * sizeof(ParkingSlot))`.
-4.  If memory allocation fails, print error and EXIT.
-5.  Attempt to open `parking_data.dat` in binary read mode (`rb`).
-6.  If file exists, read data into `lot` array.
-7.  If file does not exist, iterate from 0 to `capacity-1` setting `status = FREE`.
-8.  END
-
-### 7.2 Parking Allocation Algorithm
-1.  START
-2.  Receive `plate` string from user.
-3.  Iterate `i` from 0 to `capacity - 1`.
-4.  If `lot[i].status == FREE`:
-    1.  Set `lot[i].status = OCCUPIED`.
-    2.  Copy `plate` into `lot[i].parked_vehicle.license_plate`.
-    3.  Set `lot[i].parked_vehicle.entry_time = current_time()`.
-    4.  Print Success.
-    5.  Return Success.
-5.  If loop finishes, Print "Lot is Full".
-6.  Return Failure.
-7.  END
-
-### 7.3 Vehicle Removal & Ticketing Algorithm
-1.  START
-2.  Receive `slot_number` from user.
-3.  Validate: Is `slot_number` between 1 and `capacity`? If no, Print Error and Return.
-4.  Calculate `index = slot_number - 1`.
-5.  If `lot[index].status == OCCUPIED`:
-    1.  Get `current_time`.
-    2.  Calculate `seconds_parked = current_time - lot[index].parked_vehicle.entry_time`.
-    3.  Calculate `fee = Base_Fee + (seconds_parked * Rate)`.
-    4.  Print Receipt (Plate, Time, Fee).
-    5.  Set `lot[index].status = FREE`.
-6.  Else, Print "Slot already empty".
-7.  END
-
----
-
-## 8. EXPECTED I/O AND TESTING
-
-### 8.1 Starting the Application
-```text
-=========================================
-   Welcome to Smart Parking Management   
-=========================================
-Enter the total capacity of the parking lot: 50
-=> Starting with a fresh, empty parking lot.
-```
-
-### 8.2 Parking a Vehicle
-```text
---- Main Menu ---
-1. Park a Vehicle
-2. Remove a Vehicle
-3. View Statistics
-4. Exit
-Enter your choice: 1
-Enter License Plate: KA-01-AB-1234
-
-=> Vehicle KA-01-AB-1234 parked successfully in Slot 1.
-```
-
-### 8.3 Generating Statistics
-```text
-Enter your choice: 3
-
---- Parking Lot Statistics ---
-Total Capacity: 50
-Slot 01: [OCCUPIED] - Plate: KA-01-AB-1234
-Slot 02: [  FREE  ]
-Slot 03: [  FREE  ]
-...
-------------------------------
-Total Occupied: 1
-Total Free:     49
-------------------------------
-```
-
-### 8.4 Removing a Vehicle
-```text
-Enter your choice: 2
-Enter Slot Number to remove vehicle from: 1
-
-=> Vehicle KA-01-AB-1234 is leaving Slot 1.
-=> Time parked: 120 units.
-=> Total Fee: $245.00
-```
-
----
-
-## 9. ADVANTAGES AND LIMITATIONS
-
-### 9.1 Advantages
-*   **Highly Scalable:** The use of `malloc` ensures the program can handle a parking lot of 10 cars or 10,000 cars without recompilation.
-*   **Resilient:** The implementation of Binary File I/O ensures that a sudden power loss does not result in the loss of billing data or current occupancy states.
-*   **Modular:** The separation of concerns between `main.c` and `parking.c` makes the codebase easy to maintain, debug, and expand.
-
-### 9.2 Limitations
-*   **No Database:** While file I/O works for small scales, a real enterprise system would require a SQL database for concurrent access and querying.
-*   **Single Vehicle Type:** The current struct design assumes all vehicles take up one slot and pay the same rate.
-
----
-
-## 10. FUTURE ENHANCEMENTS
-1.  **Vehicle Categories:** Expand the `Vehicle` struct to include a `type` enum (e.g., TWO_WHEELER, FOUR_WHEELER) and apply different pricing models.
-2.  **VIP/Reserved Slots:** Add logic to reserve certain slots for specific license plates.
-3.  **Search Functionality:** Implement a search algorithm to locate a car's slot based on its license plate using string matching (`strcmp`).
-
----
-
-## 11. CONCLUSION
-The Smart Parking Management System project successfully demonstrates the application of C programming concepts to solve a real-world infrastructure problem. By fulfilling all core requirements—tracking availability, allocating spaces, and generating statistics—the project achieves its primary goal. Furthermore, the inclusion of dynamic memory allocation and file-based state persistence elevates the application from a simple academic exercise to a robust, fault-tolerant software prototype.
-
----
-
-## 12. APPENDIX: SOURCE CODE
-
-### 12.1 `parking.h`
-```c
-#ifndef PARKING_H
+#ifndef PARKING_H 
 #define PARKING_H
 
 #include <time.h> 
 
-typedef enum { FREE, OCCUPIED } SlotStatus;
+typedef enum {
+    FREE,
+    OCCUPIED
+} SlotStatus;
 
 typedef struct {
     char license_plate[20]; 
@@ -244,7 +221,7 @@ int load_data(ParkingSlot *lot, int capacity);
 #endif 
 ```
 
-### 12.2 `parking.c`
+### File 2: `parking.c`
 ```c
 #include <stdio.h>   
 #include <string.h>  
@@ -277,7 +254,6 @@ void remove_vehicle(ParkingSlot *lot, int capacity, int slot_num) {
         printf("\n=> Invalid slot number!\n");
         return; 
     }
-
     int index = slot_num - 1;
 
     if (lot[index].status == OCCUPIED) {
@@ -332,7 +308,7 @@ int load_data(ParkingSlot *lot, int capacity) {
 }
 ```
 
-### 12.3 `main.c`
+### File 3: `main.c`
 ```c
 #include <stdio.h>
 #include <stdlib.h> 
@@ -425,3 +401,79 @@ int main() {
     return 0; 
 }
 ```
+
+<div style="page-break-after: always;"></div>
+
+<div align="center">
+
+**5. RESULTS (SCREENSHOTS)**
+
+</div>
+
+*(Note: Paste your actual terminal screenshots here before printing. Below is the expected output.)*
+
+**Initialization Output:**
+```text
+=========================================
+   Welcome to Smart Parking Management   
+=========================================
+Enter the total capacity of the parking lot: 20
+=> Starting with a fresh, empty parking lot.
+
+--- Main Menu ---
+1. Park a Vehicle
+2. Remove a Vehicle
+3. View Statistics
+4. Exit
+Enter your choice:
+```
+
+**Parking Output:**
+```text
+Enter your choice: 1
+Enter License Plate: KA-01-EE-5555
+
+=> Vehicle KA-01-EE-5555 parked successfully in Slot 1.
+```
+
+**Statistics Output:**
+```text
+Enter your choice: 3
+
+--- Parking Lot Statistics ---
+Total Capacity: 20
+Slot 01: [OCCUPIED] - Plate: KA-01-EE-5555
+Slot 02: [  FREE  ]
+Slot 03: [  FREE  ]
+------------------------------
+Total Occupied: 1
+Total Free:     19
+------------------------------
+```
+
+**Removal Output:**
+```text
+Enter your choice: 2
+Enter Slot Number to remove vehicle from: 1
+
+=> Vehicle KA-01-EE-5555 is leaving Slot 1.
+=> Time parked: 120 units.
+=> Total Fee: $245.00
+```
+
+<div style="page-break-after: always;"></div>
+
+<div align="center">
+
+**6. REFERENCES**
+
+</div>
+
+*   Brian W. Kernighan and Dennis M. Ritchie, The C Programming Language, 2nd Edition, Prentice Hall of India, New Delhi. 
+*   E. Balagurusamy, Programming in ANSI C, 8th Edition, McGraw-Hill Education, India. 
+*   Stephen Prata, C Primer Plus, 6th Edition, Addison-Wesley Professional. 
+*   Yashavant Kanetkar, Let Us C, 17th Edition, BPB Publications, India. 
+*   GeeksforGeeks, Dynamic Memory Allocation in C using malloc(), Available online: GeeksforGeeks malloc in C
+*   GeeksforGeeks, Structures in C, Available online: GeeksforGeeks Structures in C 
+*   TutorialsPoint, C Programming – File I/O, Available online: TutorialsPoint File I/O in C
+*   cplusplus.com, C Standard Library Reference `<time.h>`, Available online: cplusplus.com Reference 
