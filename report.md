@@ -22,8 +22,8 @@ Submitted in partial fulfillment of the requirements for AAT
 
 **Submitted by:**
 <br>NAME OF THE CANDIDATE
-<br>1) ANEL VIGNEASH REDDI P (1BM25AD002)
-<br>2) SHREYAS K (1BM25AD54)
+<br>1) LOCHAN GOWDA T M (1BM25AD029)
+<br>2) GAGAN PERVAJE (1BM25AD015)
 
 <br><br>
 
@@ -47,12 +47,12 @@ Submitted in partial fulfillment of the requirements for AAT
 
 </div>
 
-We, Anel Vigneash Reddi P and Shreyas K students of II nd Semester, B.E, Department of AIDS, BMS College of Engineering, Bangalore, hereby declare that, this AAT Project entitled "SMART PARKING MANAGEMENT SYSTEM" has been carried out in Department of AIDS, BMS College of Engineering, Bangalore during the academic semester FEB 2025 – JUNE 2026. We also declare that to the best of our knowledge and belief, the AAT Project report is not from part of any other report by any other students.
+We, Lochan Gowda T M and Gagan Pervaje students of II nd Semester, B.E, Department of AIDS, BMS College of Engineering, Bangalore, hereby declare that, this AAT Project entitled "SMART PARKING MANAGEMENT SYSTEM" has been carried out in Department of AIDS, BMS College of Engineering, Bangalore during the academic semester FEB 2025 – JUNE 2026. We also declare that to the best of our knowledge and belief, the AAT Project report is not from part of any other report by any other students.
 
 <br><br>
 **Student Name** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Student Signature** 
-<br>1. Anel Vigneash Reddi P
-<br>2. Shreyas K
+<br>1. Lochan Gowda T M
+<br>2. Gagan Pervaje
 
 <div style="page-break-after: always;"></div>
 
@@ -67,7 +67,7 @@ We, Anel Vigneash Reddi P and Shreyas K students of II nd Semester, B.E, Departm
 
 </div>
 
-This is to certify that the AAT Project titled “SMART PARKING MANAGEMENT SYSTEM” has been carried out by Anel Vigneash Reddi P (1BM25AD002), Shreyas K (1BM25AD54) during the academic year 2025-2026.
+This is to certify that the AAT Project titled “SMART PARKING MANAGEMENT SYSTEM” has been carried out by Lochan Gowda T M (1BM25AD029), Gagan Pervaje (1BM25AD015) during the academic year 2025-2026.
 
 <br><br><br><br><br>
 **Signature of the Faculty in Charge**
